@@ -1,0 +1,7 @@
+= Websocket-Client
+
+== Run in a terminal
+----
+mvn package
+java -cp target/classes org.bytewood.websocket.WebsocketClient
+----

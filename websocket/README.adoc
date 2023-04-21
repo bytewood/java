@@ -1,0 +1,2 @@
+= Websockets
+a simple websocket client and server demo only dependent on a java 17 sdk
