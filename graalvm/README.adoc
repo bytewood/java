@@ -1,0 +1,28 @@
+= Graalvm Module
+
+a simple graalvm demo to create a native image from a java project in a terminal.
+Also configures the graalvm maven plugin to create a native image.
+
+== Prerequisites
+* Ubuntu 22.04
+* sdkman
+
+=== Setup Graalvm
+ $GRAALVM_HOME/bin/gu install native-image
+
+
+=== Ubuntu 22.04 library dependencies
+ sudo apt install build-essential zlib1g-dev
+
+
+=== Using sdkman to use graalvm in the current terminal
+ sdk use java 22.3.r19-grl
+
+== Compile and Run from a terminal
+----
+javac Main.java
+native-image Main
+----
+
+== Using maven
+ mvn -P native package
